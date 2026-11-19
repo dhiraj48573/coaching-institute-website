@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Theme A (Navy Blue + White + Orange) */
+  --brand-primary: #0F2744;
+  --brand-primary-dark: #0A192C;
+  --brand-primary-light: #1A3E6D;
+  --brand-secondary: #1E3A8A;
+  --brand-accent: #F97316;
+  --brand-accent-hover: #EA580C;
+  --brand-accent-soft: #FFEDD5;
+}
+
+[data-theme="theme-a"] {
+  /* Theme A: Navy Blue + White + Orange */
+  --brand-primary: #0F2744;
+  --brand-primary-dark: #0A192C;
+  --brand-primary-light: #1A3E6D;
+  --brand-secondary: #1E3A8A;
+  --brand-accent: #F97316;
+  --brand-accent-hover: #EA580C;
+  --brand-accent-soft: #FFEDD5;
+}
+
+[data-theme="theme-b"] {
+  /* Theme B: Royal Blue + White + Gold */
+  --brand-primary: #1E3A8A;
+  --brand-primary-dark: #172554;
+  --brand-primary-light: #2563EB;
+  --brand-secondary: #1D4ED8;
+  --brand-accent: #D97706;
+  --brand-accent-hover: #B45309;
+  --brand-accent-soft: #FEF3C7;
+}
+
+[data-theme="theme-c"] {
+  /* Theme C: Purple + White + Blue/Cyan */
+  --brand-primary: #4C1D95;
+  --brand-primary-dark: #2E1065;
+  --brand-primary-light: #6D28D9;
+  --brand-secondary: #7C3AED;
+  --brand-accent: #0284C7;
+  --brand-accent-hover: #0369A1;
+  --brand-accent-soft: #E0F2FE;
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
